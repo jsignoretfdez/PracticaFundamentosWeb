@@ -27,3 +27,65 @@
     font-family: "Play";
     src: url("../fonts/Play-Regular.ttf") format("truetype");
 }
+
+footer{
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-color);
+    grid-area: footer;
+    color: white;
+}
+
+
+.footer p{
+    text-align: center;
+    font-size: 18px;
+}
+
+.icons {
+    font-size: 18px;
+    margin-top: 13px;
+}
+
+.icons a{
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+}
+@media (min-width: 768px){
+    footer.footer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 20px;
+    }
+    .icons {
+        justify-content: space-between;
+        font-size: 25px;
+    }
+    .footer{
+        display: grid;
+        align-content: center;
+        padding: 0 50px;
+    }
+
+    .icon-facebook2:hover{
+        color: #3e3ef5;
+    }
+
+    .icon-instagram:hover{
+        color: #d0661f;
+    }
+
+    .icon-twitter:hover{
+        color: #449fdb;
+    }
+
+    .icon-youtube:hover{
+        color: red;
+    }
+}
