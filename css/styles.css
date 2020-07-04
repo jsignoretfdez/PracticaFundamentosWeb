@@ -1,0 +1,29 @@
+/* Estilos Globales*/
+
+:root{
+    --max-width: 800px;
+    --dark-color: #0c0c0c;
+    --red-color: #b12525;
+
+}
+
+@font-face {
+    font-family: "Movie";
+    src: url("../fonts/Movie_title.ttf");
+}
+
+@font-face {
+    font-family: "Orbitron-Regular";
+    src: url("../fonts/Orbitron-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Orbitron-ExtraBold";
+    src: url("../fonts/Orbitron-ExtraBold.ttf") format("truetype");
+    font-weight: bold;
+}
+
+@font-face{
+    font-family: "Play";
+    src: url("../fonts/Play-Regular.ttf") format("truetype");
+}

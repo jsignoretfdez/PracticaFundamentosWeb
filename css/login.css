@@ -1,0 +1,311 @@
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(200px, auto));
+    grid-template-rows: 70px repeat(1, minmax(auto, 1fr)) 70px ;
+    grid-template-areas:"header"
+"main"
+"footer";
+    gap: 16px;
+}
+
+body{
+    background: url("../img/bg-login.jpg") no-repeat top center;
+    background-size: auto;
+}
+
+header{
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 4px 0 var(--dark-color);
+    font-size: 35px;
+    font-family: Movie;
+    background: rgba(158,31,8,1);
+    background: -moz-linear-gradient(top, rgba(158,31,8,1) 0%, rgba(184,24,6,1) 25%, rgba(201,89,74,1) 50%, rgba(158,31,8,1) 80%, rgba(158,31,8,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(158,31,8,1)), color-stop(25%, rgba(184,24,6,1)), color-stop(50%, rgba(201,89,74,1)), color-stop(80%, rgba(158,31,8,1)), color-stop(100%, rgba(158,31,8,1)));
+    background: -webkit-linear-gradient(top, rgba(158,31,8,1) 0%, rgba(184,24,6,1) 25%, rgba(201,89,74,1) 50%, rgba(158,31,8,1) 80%, rgba(158,31,8,1) 100%);
+    background: -o-linear-gradient(top, rgba(158,31,8,1) 0%, rgba(184,24,6,1) 25%, rgba(201,89,74,1) 50%, rgba(158,31,8,1) 80%, rgba(158,31,8,1) 100%);
+    background: -ms-linear-gradient(top, rgba(158,31,8,1) 0%, rgba(184,24,6,1) 25%, rgba(201,89,74,1) 50%, rgba(158,31,8,1) 80%, rgba(158,31,8,1) 100%);
+    background: linear-gradient(to bottom, rgba(158,31,8,1) 0%, rgba(184,24,6,1) 25%, rgba(201,89,74,1) 50%, rgba(158,31,8,1) 80%, rgba(158,31,8,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9e1f08', endColorstr='#9e1f08', GradientType=0 );
+    letter-spacing: 3px;
+}
+.title-logo{
+    margin: 0;
+    line-height: 80px;
+}
+
+header{
+    grid-area: header;
+}
+
+main{
+    grid-area: main;
+    background-color: black;
+    margin: auto;
+    max-width: 90vw;
+    color: white;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-color);
+    grid-area: footer;
+    color: white;
+}
+
+.main-container-login{
+    border-radius: 30px;
+    border: 3px solid #6c1b1b;
+}
+
+.two-section{
+    display: grid;
+    grid-template-areas: "title"
+"info"
+"access";
+}
+
+.title-two-section{
+    grid-area: title;
+    text-align: center;
+    color: white;
+    font-family: Orbitron-ExtraBold;
+    font-size: 1.6rem;
+    text-shadow: 2px 2px 15px rgba(255, 255, 255, 0.5);
+    letter-spacing: 3px;
+    margin: 12px 0;
+}
+
+.section-info{
+    grid-area: info;
+    background-color: #050505;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+.box-info p::before{
+    content: "✓ ";
+    color: greenyellow;
+    font-size: 1.2rem;
+}
+
+.section-info h3{
+    font-family: Orbitron-Regular;
+    font-size: 22px;
+}
+
+.section-info p{
+    font-family: Play;
+    margin: 16px 0;
+    font-size: 18px;
+}
+
+.section-acces{
+    grid-area: access;
+    padding: 10px 0;
+    margin: 0 10px;
+}
+
+.box-info form{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-family: Play;
+    margin: 4px 0;
+    font-size: 16px;
+}
+
+form input[type=email],
+form input[type=password],
+form input[type=checkbox],
+form input[type=submit]{
+    padding: 4px 0;
+    margin: 5px 0;
+}
+
+form input[type=email],
+form input[type=password]{
+    font-family: Play;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid var(--red-color);
+    color: white;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.check-box{
+    margin: 5px 0;
+}
+
+.check-box label{
+    padding: 5px;
+}
+
+form input[type=submit]{
+    font-size: 16px;
+    background-color: var(--red-color);
+    color: white;
+    border-radius: 50px;
+}
+
+.remenber{
+    display: grid;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    opacity: 1;
+    margin-top: 5px;
+}
+
+.footer p{
+    text-align: center;
+    font-size: 18px;
+}
+
+.icons {
+    font-size: 18px;
+    margin-top: 13px;
+}
+
+.icons a{
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+@media (min-width: 576px) {
+
+    body{
+        background-size: auto;
+    }
+
+    main{
+        width: 80vw;
+        max-width: 90vw;
+        height:auto;
+        margin: auto;
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    body {
+        background-size: cover;
+    }
+
+    main{
+        width: 70%;
+        max-width: 700px;
+    }
+
+    .two-section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: "title title"
+                            "info access";
+        margin-bottom: 30px;
+        gap:10px;
+    }
+
+    .title-two-section{
+        font-size: 2.1rem;
+    }
+
+    .section-info h3{
+        font-size: 23px;
+    }
+
+    .box-info p::before{
+        font-size: 1.2rem;
+    }
+
+    .section-info p{
+        font-size: 18px;
+    }
+
+    label{
+        font-size: 1.2rem;
+    }
+
+    .box-info-form input[type="email"],
+    .box-info-form input[type="password"],
+    .box-info-form input[type="checkbox"],
+    .box-info-form input[type="submit"]{
+        font-size: 1.3rem;
+    }
+
+    .box-info input[type="submit"]{
+        text-shadow: 2px 2px 0 var(--dark-color);
+        letter-spacing: 2px;
+        width: 50%;
+        margin: 10px auto 10px auto;
+    }
+
+    form input[type=submit]:hover{
+        background-color: var(--dark-color);
+    }
+
+    .remenber{
+        opacity: .5;
+        font-size: 1.2rem;
+    }
+
+    .remenber:hover{
+        opacity: 1;
+    }
+
+    footer.footer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 20px;
+    }
+    .icons {
+        justify-content: space-between;
+        font-size: 25px;
+    }
+    .footer{
+        display: grid;
+        align-content: center;
+        padding: 0 50px;
+    }
+
+    .icon-facebook2:hover{
+        color: #3e3ef5;
+    }
+
+    .icon-instagram:hover{
+        color: #d0661f;
+    }
+
+    .icon-twitter:hover{
+        color: #449fdb;
+    }
+
+    .icon-youtube:hover{
+        color: red;
+    }
+
+}
+
+
+@media (min-width: 992px) {
+
+}
+
+
+@media (min-width: 1200px) {
+
+}
