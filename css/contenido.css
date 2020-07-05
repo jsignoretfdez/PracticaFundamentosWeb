@@ -1,0 +1,47 @@
+.article{
+    position: relative;
+}
+
+.icon-star-empty-2,
+.icon-star-full-3{
+    font-size: 2rem;
+}
+
+.article-favorite{
+    position: relative;
+}
+
+.article_4 .article-favorite-new i,
+.article_2 .article-favorite-new i{
+    color: yellow;
+}
+
+.article-favorite-all{
+    color: yellow;
+}
+
+.article-favorite i{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+.article-info{
+  position: absolute;
+    bottom: 0px;
+    padding: 10px;
+    height: 100%;
+    opacity: 0;
+}
+
+.article:hover{
+    z-index: 90;
+}
+
+.article-info:hover{
+    height: 100%;
+    opacity: 1;
+    background-color: rgba(255,255,255,0.5);
+    color: black;
+}
+
