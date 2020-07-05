@@ -5,6 +5,7 @@
     --max-width: 800px;
     --dark-color: #0c0c0c;
     --red-color: #b12525;
+    --navbar-height: 70px;
 
 }
 
@@ -29,6 +30,35 @@
     src: url("../fonts/Play-Regular.ttf") format("truetype");
 }
 
+li,
+a{
+    text-decoration: none;
+    list-style: none;
+}
+
+.container-main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto 70px;
+    grid-template-areas: "navbar"
+    "header"
+"main"
+"footer";
+    gap: 1rem;
+}
+
+nav{
+    grid-area: navbar;
+}
+
+header{
+    grid-area: header;
+}
+
+main{
+    grid-area: main;
+}
+
 footer{
     grid-area: footer;
     display: flex;
@@ -36,10 +66,8 @@ footer{
     justify-content: center;
     align-items: center;
     background-color: var(--dark-color);
-    grid-area: footer;
     color: white;
 }
-
 
 .footer p{
     text-align: center;
