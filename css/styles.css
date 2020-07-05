@@ -6,7 +6,10 @@
     --dark-color: #0c0c0c;
     --red-color: #b12525;
     --navbar-height: 70px;
+}
 
+.section-main img{
+    height: 270px;
 }
 
 @font-face {
@@ -44,7 +47,7 @@ a{
     "header"
 "main"
 "footer";
-    gap: 1rem;
+    gap: 2rem;
 }
 
 nav{

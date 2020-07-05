@@ -29,10 +29,6 @@ body{
     font-family: Play;
 }
 
-.navbar a:hover{
-    color: var(--red-color);
-}
-
 .navbar input[type="search"]{
     border-radius: 20px;
 
@@ -56,8 +52,23 @@ header{
     max-width: 900px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(4, minmax(150px, auto));
+    grid-template-columns: repeat(1, minmax(350px, 800px));
     grid-template-rows: auto;
-    gap: 16px;
+    gap: 25px;
 
 }
+
+.section-main{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(150px,auto));
+    grid-template-rows: auto;
+    gap: 16px;
+    grid-template-areas: "title title title title"
+}
+
+.title-section-main{
+    grid-area: title;
+}
+
+
+
