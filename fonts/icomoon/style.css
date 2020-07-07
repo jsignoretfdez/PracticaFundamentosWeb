@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?72tw77');
-  src:  url('fonts/icomoon.eot?72tw77#iefix') format('embedded-opentype'),
-  url('fonts/icomoon.ttf?72tw77') format('truetype'),
-  url('fonts/icomoon.woff?72tw77') format('woff'),
-  url('fonts/icomoon.svg?72tw77#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?eie5sp');
+  src:  url('fonts/icomoon.eot?eie5sp#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?eie5sp') format('truetype'),
+    url('fonts/icomoon.woff?eie5sp') format('woff'),
+    url('fonts/icomoon.svg?eie5sp#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,14 +25,26 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-search:before {
-  content: "\e986";
+.icon-film:before {
+  content: "\e913";
 }
-.icon-star-empty:before {
+.icon-file-text:before {
+  content: "\e922";
+}
+.icon-database:before {
+  content: "\e964";
+}
+.icon-user:before {
+  content: "\e971";
+}
+.icon-star-empty-2:before {
   content: "\e9d7";
 }
-.icon-star-full:before {
+.icon-star-full-3:before {
   content: "\e9d9";
+}
+.icon-circle-down:before {
+  content: "\ea43";
 }
 .icon-facebook2:before {
   content: "\ea91";

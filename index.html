@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./fonts/icomoon/style.css">
-    <link rel="stylesheet" href="./fonts/icomoon2/style.css">
-    <link rel="stylesheet" href="./fonts/icomoon3/style.css">
     <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/contenido.css">
@@ -43,14 +41,41 @@
                 <a href="#favoritos">Favoritos</a>
             </li>
 
+            <li class="navbar-item">
+                <a href="#contacto">Contacto</a>
+            </li>
+
             <li class="navbar-item navbar-search">
                 <input type="search" placeholder="Buscar..." class="searching">
             </li>
 
-            <li class="navbar-item navbar-out">
-                <button><a href="./login.html" class="out">Salir</a>
-                </button>
+            <li class="navbar-item navbar-out-mobile">
+                <a href="./login.html" class="out">Cerrar Sesión</a>
             </li>
+
+
+            <ul class="navbar-submenu-control">
+                <li class="navbar-item navbar-out">
+                    <a href="#" class="out"><i class="icon-user"></i></a>
+                </li>
+
+                <ul class="navbar-list navbar-submenu">
+                    <li class="navbar-item-submenu">
+                        <a href="#" class="out">Perfil</a>
+                    </li>
+
+                    <li class="navbar-item-submenu">
+                        <a href="#" class="out">Datos</a>
+                    </li>
+
+                    <li class="navbar-item-submenu">
+                        <a href="./login.html" class="out">Salir</a>
+                    </li>
+
+                </ul>
+
+            </ul>
+
 
         </ul>
     </nav>

@@ -19,6 +19,9 @@ body{
     text-align: center;
     line-height: var(--navbar-height);
     font-size: 2rem;
+    text-shadow: 2px 2px 0 var(--dark-color);
+    text-transform: uppercase;
+    letter-spacing: .1rem;
 
     /* position: fixed;
     top: 0;
@@ -83,17 +86,6 @@ body{
     margin: 0 auto;
 }
 
-.navbar-out{
-    display: inline-block;
-    margin: 0 auto;
-}
-
-.navbar-out > button{
-    border-radius: 50px;
-    padding: 0 5px;
-    width: 80px;
-}
-
 .searching{
     display: inline-block;
     border-radius: 20px;
@@ -102,13 +94,8 @@ body{
     font-size: 1.2rem;
 }
 
-.out{
-    border-radius: 20px;
-    padding: 0 5px;
-    width: 70px;
-    font-size: 1.2rem;
-    color: var(--dark-color);
-
+.navbar-submenu-control{
+    display: none;
 }
 
 @media (min-width: 768px) {
@@ -117,7 +104,7 @@ body{
     }
 
     .navbar .logo {
-        margin: 0 1rem;
+        margin: 0 .5rem;
     }
 
     .navbar .burger-label {
@@ -130,19 +117,21 @@ body{
         justify-content: flex-end;
         flex-direction: row;
         background-color: var(--red-color);
+        margin: 0 .5rem;
     }
 
     .navbar-item > a{
         display: flex;
         color: white;
         line-height: var(--navbar-height);
-        padding: 0 1rem;
+        padding: 0 .5rem;
         font-size: inherit;
     }
 
     .navbar-item > a:hover {
         background-color: var(--dark-color);
         color: azure;
+        transition: ease-in-out 1s;
     }
 
     .navbar-search{
@@ -151,28 +140,62 @@ body{
         margin: 0;
     }
 
-    .navbar-out {
-        line-height: 50px;
-        margin: 0 3px 0 0;
-    }
-
-
     .searching{
         border-radius: 20px;
         padding: 0 5px;
         width: 110px;
         font-size: 1rem;
     }
+    .navbar-submenu-control{
+        display: block;
+    }
 
-    .navbar-out > button{
-        border-radius: 50px;
-        padding: 0 5px;
-        width: 70px;
+    .navbar-submenu{
+        display: none;
+        position: absolute;
+        right: 0;
+        border: 2px solid var(--dark-color);
+        line-height: 1rem;
+        background-color: #f3f1f1;
+
     }
-    .out{
+
+    .navbar-item-submenu{
+
+        min-width: 100%;
+        padding: 1rem 3rem;
+    }
+
+    .navbar-item-submenu:hover{
+        background-color: #d2d0d0;
+        width: 100%;
+        transition: ease-in-out .4s;
+    }
+    .navbar-item-submenu a{
+        font-family: Orbitron-Regular;
         color: var(--dark-color);
-        font-size: 1rem;
     }
+
+    .navbar-submenu-control:hover .navbar-submenu{
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar-out-mobile{
+        display: none;
+    }
+
+    .icon-user{
+        line-height: 50px;
+        font-size: 1.5rem;
+    }
+
+
+
+
+
+
+
+
 
 
 }
