@@ -22,7 +22,6 @@ header{
     color: white;
     text-shadow: 2px 4px 0 var(--dark-color);
     font-size: 35px;
-    font-family: Movie;
     background: rgba(158,31,8,1);
     background: -moz-linear-gradient(top, rgba(158,31,8,1) 0%, rgba(184,24,6,1) 25%, rgba(201,89,74,1) 50%, rgba(158,31,8,1) 80%, rgba(158,31,8,1) 100%);
     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(158,31,8,1)), color-stop(25%, rgba(184,24,6,1)), color-stop(50%, rgba(201,89,74,1)), color-stop(80%, rgba(158,31,8,1)), color-stop(100%, rgba(158,31,8,1)));
@@ -34,6 +33,7 @@ header{
     letter-spacing: 3px;
 }
 .title-logo{
+    font-family: Movie;
     margin: 0;
     line-height: 80px;
 }

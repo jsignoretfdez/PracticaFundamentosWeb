@@ -2,19 +2,15 @@
 /* Estilos Globales*/
 
 :root{
-    --max-width: 800px;
+    --max-width: 900px;
     --dark-color: #0c0c0c;
     --red-color: #b12525;
-    --navbar-height: 70px;
-}
-
-.section-main img{
-    height: 270px;
+    --navbar-height: 50px;
 }
 
 @font-face {
     font-family: "Movie";
-    src: url("../fonts/Movie_title.ttf");
+    src: url("../fonts/Movie_title.ttf") format("truetype");
 }
 
 @font-face {
@@ -62,64 +58,6 @@ main{
     grid-area: main;
 }
 
-footer{
-    grid-area: footer;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--dark-color);
-    color: white;
-}
-
-.footer p{
-    text-align: center;
-    font-size: 18px;
-}
-
-.icons {
-    font-size: 18px;
-    margin-top: 13px;
-}
-
-.icons a{
-    padding: 5px;
-    text-decoration: none;
-    color: white;
-}
-@media (min-width: 768px) {
-    footer.footer {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        font-size: 20px;
-    }
-
-    .icons {
-        justify-content: space-between;
-        font-size: 25px;
-    }
-
-    .footer {
-        display: grid;
-        align-content: center;
-        padding: 0 50px;
-    }
-
-    .icon-facebook2:hover {
-        color: #3e3ef5;
-    }
-
-    .icon-instagram:hover {
-        color: #d0661f;
-    }
-
-    .icon-twitter:hover {
-        color: #449fdb;
-    }
-
-    .icon-youtube:hover {
-        color: red;
-    }
+.section-main img{
+    height: 270px;
 }

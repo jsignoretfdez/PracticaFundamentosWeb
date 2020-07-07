@@ -1,0 +1,81 @@
+header{
+    background: url("../img/header2-compressor.jpg") no-repeat top center;
+    background-size: cover;
+    height:100vh;
+    width: 100vw;
+}
+
+#header{
+    position: relative;
+}
+
+.text-header{
+    position: absolute;
+    top: 45vh;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(255, 255, 255,0.8);
+    color: var(--dark-color);
+   padding: 10px;
+    height: 20vh;
+}
+
+.title{
+    font-family: Orbitron-ExtraBold;
+    font-size: 2.4rem;
+}
+
+.tagline{
+    font-family: Play;
+    font-size: 1.5rem;
+}
+
+
+@media (min-width: 768px) {
+    .text-header{
+
+        top: 20vw;
+        left: 50%;
+        height:35vh;
+        width: 50vw;
+        padding: 5vh 10px;
+    }
+
+    @keyframes caida {
+        from {
+            opacity: 0;
+            transform: translateY(-100%);
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes subida {
+        0% {
+            opacity: 0;
+            transform: translate(0, 100%);
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .title{
+        font-family: Orbitron-ExtraBold;
+        font-size: 3rem;
+        opacity: 0;
+        animation: caida 2.5s ease-in-out forwards;
+        animation-delay: .5s;
+    }
+
+    .tagline{
+        font-family: Play;
+        font-size: 2.2rem;
+        opacity: 0;
+        animation: subida 1s ease-in-out forwards;
+        animation-delay: 1.8s;
+    }
+}

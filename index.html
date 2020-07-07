@@ -11,30 +11,57 @@
     <link rel="stylesheet" href="./fonts/icomoon2/style.css">
     <link rel="stylesheet" href="./fonts/icomoon3/style.css">
     <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/contenido.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <title>Sofa y Manta</title>
 </head>
 <body>
 
 <div class="container-main">
-<nav class="navbar">
+    <nav id="navbar" class="navbar">
+        <div class="logo">Sofa y Manta</div>
 
-    <ul>
-        <li><a href="#header">Inicio</a></li>
-        <li><a href="#novedades">Novedades</a></li>
-        <li><a href="#peliculas">Peliculas</a></li>
-        <li><a href="#series">Series</a></li>
-        <li><a href="#favoritos">Favoritos</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-        <li><input class="searching icon-search" type="search" placeholder="Buscar..."></li>
-        <li><a href="./login.html"><button class="out-sesion">Cerrar Sesión</button></a></li>
-    </ul>
-</nav>
+        <input type="checkbox" id="burger-checkbox" />
+        <label for="burger-checkbox" class="burger-label"></label>
+
+        <ul class="navbar-list">
+            <li class="navbar-item">
+                <a href="#header">Inicio</a>
+            </li>
+            <li class="navbar-item">
+                <a href="#novedades">Novedades</a>
+            </li>
+            <li class="navbar-item">
+                <a href="#peliculas">Películas</a>
+            </li>
+            <li class="navbar-item">
+                <a href="#series">Series</a>
+            </li>
+            <li class="navbar-item">
+                <a href="#favoritos">Favoritos</a>
+            </li>
+
+            <li class="navbar-item navbar-search">
+                <input type="search" placeholder="Buscar..." class="searching">
+            </li>
+
+            <li class="navbar-item navbar-out">
+                <button><a href="./login.html" class="out">Salir</a>
+                </button>
+            </li>
+
+        </ul>
+    </nav>
+
 
 <header id="header">
-    <img src="./img/header2.jpg" alt="header-cine" class="img-header">
-    <h1>Cine en Casa</h1>
-    <p>En Sofa y Manta encontrará las mejores series y películas</p>
+    <!--<img src="./img/header2.jpg" alt="header-cine" class="img-header">-->
+    <div class="text-header">
+        <h1 class="title">Cine en Casa</h1>
+        <p class="tagline">En Sofa y Manta encontrará las mejores series y películas</p>
+    </div>
 </header>
 
 <main class="main">
@@ -43,8 +70,10 @@
         <h1 class="title-section-main">Novedades</h1>
         <article class="article article_1">
             <div class="article-favorite article-favorite-new">
-                <img src="./img/new-1.jpg" alt="Serie Dark">
-                <i class="icon-star-empty-2"></i>
+                <div class="article-favorite-box">
+                    <img src="./img/new-1.jpg" alt="Serie Dark">
+                    <i class="icon-star-empty-2"></i>
+                </div>
                 <a href="./detail.html"><div class="article-info">
                     <h2>Dark Temporada 3</h2>
                     <p>Recomendado: +16</p>
@@ -55,8 +84,10 @@
         </article>
         <article class="article_2">
             <div class="article-favorite article-favorite-new">
+                <div class="article-favorite-box">
                 <img src="./img/serie-2.jpg" alt="Serie Dark">
                 <i class="icon-star-full-3"></i>
+                </div>
                 <a href="./detail.html"><div class="article-info">
                     <h2>Dark Temporada 3</h2>
                     <p>Recomendado: +16</p>
@@ -68,8 +99,10 @@
         </article>
         <article class="article_3">
             <div class="article-favorite article-favorite-new">
+                <div class="article-favorite-box">
                 <img src="./img/serie-1.jpg" alt="Serie Dark">
                 <i class="icon-star-empty-2"></i>
+                </div>
                 <a href="./detail.html"><div class="article-info">
                     <h2>Dark Temporada 3</h2>
                     <p>Recomendado: +16</p>
@@ -81,8 +114,10 @@
         </article>
         <article class="article_4">
             <div class="article-favorite article-favorite-new">
+                <div class="article-favorite-box">
                 <img src="./img/new-2.jpg" alt="Serie Dark">
                 <i class="icon-star-full-3"></i>
+                </div>
                 <a href="./detail.html"><div class="article-info">
                     <h2>Dark Temporada 3</h2>
                     <p>Recomendado: +16</p>
@@ -97,8 +132,10 @@
         <h1 class="title-section-main">Películas</h1>
         <article class="article article_1">
             <div class="article-favorite article-favorite-new">
+                <div class="article-favorite-box">
                 <img src="./img/peli-1.jpg" alt="Serie Dark">
                 <i class="icon-star-empty-2"></i>
+                </div>
                 <a href="./detail.html"><div class="article-info">
                     <h2>Dark Temporada 3</h2>
                     <p>Recomendado: +16</p>
@@ -109,9 +146,10 @@
         </article>
         <article class="article_2">
             <div class="article-favorite article-favorite-new">
-
+                <div class="article-favorite-box">
                 <img src="./img/peli-2.jpg" alt="Serie Dark">
                 <i class="icon-star-full-3"></i>
+                </div>
                 <a href="./detail.html"><div class="article-info">
                     <h2>Dark Temporada 3</h2>
                     <p>Recomendado: +16</p>
@@ -123,8 +161,10 @@
         </article>
         <article class="article_3">
             <div class="article-favorite article-favorite-new">
+                <div class="article-favorite-box">
                 <img src="./img/peli-3.jpg" alt="Serie Dark">
                 <i class="icon-star-empty-2"></i>
+                </div>
                 <a href="./detail.html"><div class="article-info">
                     <h2>Dark Temporada 3</h2>
                     <p>Recomendado: +16</p>
@@ -136,8 +176,10 @@
         </article>
         <article class="article_4">
             <div class="article-favorite article-favorite-new">
+                <div class="article-favorite-box">
                 <img src="./img/peli-4.jpg" alt="Serie Dark">
                 <i class="icon-star-full-3"></i>
+                </div>
                 <a href="./detail.html"><div class="article-info">
                     <h2>Dark Temporada 3</h2>
                     <p>Recomendado: +16</p>
@@ -152,8 +194,10 @@
         <h1 class="title-section-main">Series</h1>
         <article class="article article_1">
             <div class="article-favorite article-favorite-new">
+                <div class="article-favorite-box">
                 <img src="./img/serie-1.jpg" alt="Serie Dark">
                 <i class="icon-star-empty-2"></i>
+                </div>
                 <a href="./detail.html"><div class="article-info">
                     <h2>Dark Temporada 3</h2>
                     <p>Recomendado: +16</p>
@@ -164,9 +208,11 @@
         </article>
         <article class="article_2">
             <div class="article-favorite article-favorite-new">
+                <div class="article-favorite-box">
 
                 <img src="./img/serie-2.jpg" alt="Serie Dark">
                 <i class="icon-star-full-3"></i>
+                </div>
                 <a href="./detail.html"><div class="article-info">
                     <h2>Dark Temporada 3</h2>
                     <p>Recomendado: +16</p>
@@ -178,8 +224,10 @@
         </article>
         <article class="article_3">
             <div class="article-favorite article-favorite-new">
+                <div class="article-favorite-box">
                 <img src="./img/serie-3.jpg" alt="Serie Dark">
                 <i class="icon-star-empty-2"></i>
+                </div>
                 <a href="./detail.html"><div class="article-info">
                     <h2>Dark Temporada 3</h2>
                     <p>Recomendado: +16</p>
@@ -191,8 +239,10 @@
         </article>
         <article class="article_4">
             <div class="article-favorite article-favorite-new">
+                <div class="article-favorite-box">
                 <img src="./img/serie-4.jpg" alt="Serie Dark">
                 <i class="icon-star-full-3"></i>
+                </div>
                 <a href="./detail.html"><div class="article-info">
                     <h2>Dark Temporada 3</h2>
                     <p>Recomendado: +16</p>
@@ -207,8 +257,10 @@
         <h1 class="title-section-main">Favoritos</h1>
         <article class="article article_1">
             <div class="article-favorite article-favorite-all">
-                <img src="./img/new-2.jpg" alt="Serie Dark">
+                <div class="article-favorite-box">
+                <img src="./img/new-2.jpg" alt="Serie Dark" class="img-film">
                 <i class="icon-star-full-3"></i>
+                </div>
                 <a href="./detail.html"><div class="article-info">
                     <h2>Dark Temporada 3</h2>
                     <p>Recomendado: +16</p>
@@ -219,8 +271,10 @@
         </article>
         <article class="article_2">
             <div class="article-favorite article-favorite-all">
+                <div class="article-favorite-box">
                 <img src="./img/serie-2.jpg" alt="Serie Dark">
                 <i class="icon-star-full-3"></i>
+                </div>
                 <a href="./detail.html"><div class="article-info">
                     <h2>Dark Temporada 3</h2>
                     <p>Recomendado: +16</p>
@@ -232,8 +286,10 @@
         </article>
         <article class="article_3">
             <div class="article-favorite article-favorite-all">
+                <div class="article-favorite-box">
                 <img src="./img/peli-4.jpg" alt="Serie Dark">
                 <i class="icon-star-full-3"></i>
+                </div>
                 <a href="./detail.html"><div class="article-info">
                     <h2>Dark Temporada 3</h2>
                     <p>Recomendado: +16</p>
@@ -245,8 +301,68 @@
         </article>
         <article class="article_4">
             <div class="article-favorite article-favorite-all">
+                <div class="article-favorite-box">
                 <img src="./img/serie-4.jpg" alt="Serie Dark">
                 <i class="icon-star-full-3"></i>
+                </div>
+                <a href="./detail.html"><div class="article-info">
+                    <h2>Dark Temporada 3</h2>
+                    <p>Recomendado: +16</p>
+                    <p>Año: 2020</p>
+                    <p>Desenlace de los viajes en el tiempo</p>
+                </div></a>
+            </div>
+        </article>
+        <article class="article article_1">
+            <div class="article-favorite article-favorite-all">
+                <div class="article-favorite-box">
+                <img src="./img/new-2.jpg" alt="Serie Dark">
+                <i class="icon-star-full-3"></i>
+                </div>
+                <a href="./detail.html"><div class="article-info">
+                    <h2>Dark Temporada 3</h2>
+                    <p>Recomendado: +16</p>
+                    <p>Año: 2020</p>
+                    <p>Desenlace de los viajes en el tiempo</p>
+                </div></a>
+            </div>
+        </article>
+        <article class="article_2">
+            <div class="article-favorite article-favorite-all">
+                <div class="article-favorite-box">
+                <img src="./img/serie-2.jpg" alt="Serie Dark">
+                <i class="icon-star-full-3"></i>
+                </div>
+                <a href="./detail.html"><div class="article-info">
+                    <h2>Dark Temporada 3</h2>
+                    <p>Recomendado: +16</p>
+                    <p>Año: 2020</p>
+                    <p>Desenlace de los viajes en el tiempo</p>
+                </div></a>
+            </div>
+
+        </article>
+        <article class="article_3">
+            <div class="article-favorite article-favorite-all">
+                <div class="article-favorite-box">
+                <img src="./img/peli-4.jpg" alt="Serie Dark">
+                <i class="icon-star-full-3"></i>
+                </div>
+                <a href="./detail.html"><div class="article-info">
+                    <h2>Dark Temporada 3</h2>
+                    <p>Recomendado: +16</p>
+                    <p>Año: 2020</p>
+                    <p>Desenlace de los viajes en el tiempo</p>
+                </div></a>
+            </div>
+
+        </article>
+        <article class="article_4">
+            <div class="article-favorite article-favorite-all">
+                <div class="article-favorite-box">
+                <img src="./img/serie-4.jpg" alt="Serie Dark">
+                <i class="icon-star-full-3"></i>
+                </div>
                 <a href="./detail.html"><div class="article-info">
                     <h2>Dark Temporada 3</h2>
                     <p>Recomendado: +16</p>
@@ -257,17 +373,38 @@
         </article>
     </section>
 
-    <section id="contacto">
+    <section id="contacto" class="section-main section-inverted">
         <h2>Contacto</h2>
+
+        <form action="" id="contact-form">
+            <div class="contact-text">
+            <div class="contact-data">
+                <label for="name">Nombre</label>
+                <input type="text" id="name">
+                <label for="last-name">Apellido</label>
+                <input type="text" id="last-name">
+                <label for="mail">Email</label>
+                <input type="email" id="mail">
+            </div>
+            <div class="contact-sms">
+                <label for="sms">Mensaje</label>
+                <textarea name="sms" id="sms" cols="30" rows="9"></textarea>
+            </div>
+            </div>
+
+            <div class="actions">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
     </section>
 </main>
 
 <footer class="footer footer-main">
-    <aside>
+    <aside class="copyright box-footer">
         <p>&copy; 2020 Jose Manuel Signoret</p>
     </aside>
 
-    <aside class="icons">
+    <aside class="icons box-footer">
         <a href="#"><i class="icon-facebook2"></i></a>
         <a href="#"><i class="icon-instagram"></i></a>
         <a href="#"><i class="icon-twitter"></i></a>
