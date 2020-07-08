@@ -88,14 +88,14 @@
             padding: 10px;
             height: 100%;
             opacity: 0;
-            transition: ease-in-out 800ms;
+            transition: ease-in-out 600ms;
         }
 
         .article-info h2 {
             font-size: 1.2rem;
         }
 
-        .article-info:hover {
+        .article-info:hover{
             height: 100%;
             opacity: 1;
             background-color: rgba(255, 255, 255, 0.8);
