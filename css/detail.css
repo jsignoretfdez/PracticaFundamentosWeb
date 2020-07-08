@@ -1,9 +1,19 @@
-.header-detail{
+/*.header-detail{
 background: url("../img/header-detail.jpg") no-repeat top center;
     background-size: cover;
     width: 100vw;
     height: 30vh;
     margin-top: 10px;
+}*/
+
+.header-detail{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    max-height: 300px;
+}
+.header-detail img{
+    width: 100%;
+    height: 100%;
 }
 
 .container-detail{
@@ -52,11 +62,10 @@ background: url("../img/header-detail.jpg") no-repeat top center;
     text-transform: uppercase;
 }
 
-
-
 @media (min-width: 768px) {
 
     .header-detail{
+        max-height: 400px;
         height: 90vh;
     }
 
@@ -71,8 +80,6 @@ background: url("../img/header-detail.jpg") no-repeat top center;
         gap:20px;
         max-height: 100vh;
     }
-
-
 
 }
 
