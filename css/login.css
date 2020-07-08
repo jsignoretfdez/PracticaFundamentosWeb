@@ -32,14 +32,15 @@ header{
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9e1f08', endColorstr='#9e1f08', GradientType=0 );
     letter-spacing: 3px;
 }
+
+header{
+    grid-area: header;
+}
+
 .title-logo{
     font-family: Movie;
     margin: 0;
     line-height: 80px;
-}
-
-header{
-    grid-area: header;
 }
 
 main{
@@ -103,7 +104,7 @@ main{
     margin: 0 10px;
 }
 
-.box-info form{
+.box-info-form{
     display: flex;
     flex-direction: column;
 }
@@ -114,16 +115,16 @@ label{
     font-size: 16px;
 }
 
-form input[type=email],
-form input[type=password],
-form input[type=checkbox],
-form input[type=submit]{
+.box-info-form input[type=email],
+.box-info-form input[type=password],
+.box-info-form input[type=checkbox],
+.box-info-form input[type=submit]{
     padding: 4px 0;
     margin: 5px 0;
 }
 
-form input[type=email],
-form input[type=password]{
+.box-info-form input[type=email],
+.box-info-form input[type=password]{
     font-family: Play;
     background-color: transparent;
     border: none;
@@ -141,7 +142,7 @@ form input[type=password]{
     padding: 5px;
 }
 
-form input[type=submit]{
+.box-info-form input[type=submit]{
     font-size: 16px;
     background-color: var(--red-color);
     color: white;
@@ -228,7 +229,7 @@ form input[type=submit]{
         margin: 10px auto 10px auto;
     }
 
-    form input[type=submit]:hover{
+    .box-info-form input[type=submit]:hover{
         background-color: var(--dark-color);
     }
 
