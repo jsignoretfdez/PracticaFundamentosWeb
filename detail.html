@@ -8,13 +8,12 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./fonts/icomoon/style.css">
-    <link rel="stylesheet" href="./fonts/icomoon2/style.css">
-    <link rel="stylesheet" href="./fonts/icomoon3/style.css">
     <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/contenido.css">
     <link rel="stylesheet" href="./css/contact.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/detail.css">
     <title>Detalles | Sofa y Manta </title>
 </head>
 <body>
@@ -28,7 +27,7 @@
 
         <ul class="navbar-list">
             <li class="navbar-item">
-                <a href="#header">Inicio</a>
+                <a href="./index.html">Inicio</a>
             </li>
             <li class="navbar-item">
                 <a href="#novedades">Novedades</a>
@@ -43,28 +42,171 @@
                 <a href="#favoritos">Favoritos</a>
             </li>
 
+            <li class="navbar-item">
+                <a href="#contacto">Contacto</a>
+            </li>
+
             <li class="navbar-item navbar-search">
                 <input type="search" placeholder="Buscar..." class="searching">
             </li>
 
-            <li class="navbar-item navbar-out">
-                <button><a href="./login.html" class="out">Salir</a>
-                </button>
+            <li class="navbar-item navbar-out-mobile">
+                <a href="./login.html" class="out">Cerrar Sesión</a>
             </li>
+
+
+            <ul class="navbar-submenu-control">
+                <li class="navbar-item navbar-out">
+                    <a href="#" class="out"><i class="icon-user"></i></a>
+                </li>
+
+                <ul class="navbar-list navbar-submenu">
+                    <li class="navbar-item-submenu">
+                        <a href="#" class="out">Perfil</a>
+                    </li>
+
+                    <li class="navbar-item-submenu">
+                        <a href="#" class="out">Datos</a>
+                    </li>
+
+                    <li class="navbar-item-submenu">
+                        <a href="./login.html" class="out">Salir</a>
+                    </li>
+                </ul>
+            </ul>
 
         </ul>
     </nav>
 
+    <header class="header-detail">
 
-    <header id="header">
-        <!--<img src="./img/header2.jpg" alt="header-cine" class="img-header">-->
-        <div class="text-header">
-            <h1 class="title">Cine en Casa</h1>
-            <p class="tagline">En Sofa y Manta encontrará las mejores series y películas</p>
-        </div>
     </header>
 
     <main class="main">
+
+        <section class="container-detail">
+            <h1 class="title-video">Trailer</h1>
+            <article class="video">
+                <video  src="video/trailer.mp4" width="100%" height="100%" controls="true">
+                </video>
+            </article>
+            <h1 class="title-info">Info</h1>
+            <article class="info">
+                <p><span>Titulo:</span>Guardianes de la Galaxia.</p>
+                <p><span>Genero:</span> Cienci-Ficción.</p>
+                <p><span>Productora:</span> Marvel.</p>
+                <p><span>Recomendado:</span> +16años.</p>
+                <p><span>Duración:</span> 118min.</p>
+                <p><span>Reparto:</span> Chris Patt, Dave Bautista, Bradley Cooper.</p>
+                <p><span>Director:</span> James Gunn.</p>
+                <p><span>Año:</span> 2014.</p>
+            </article>
+
+            <h1 class="title-sipno">Sipnosis</h1>
+            <article class="sipno">
+
+                <p>El temerario aventurero Peter Quill es objeto de un implacable cazarrecompensas después de robar una misteriosa esfera codiciada por Ronan, un poderoso villano cuya ambición amenaza todo el universo.</p>
+                <br />
+                <p>Para poder escapar del incansable Ronan, Quill se ve obligado a pactar una complicada tregua con un cuarteto de disparatados inadaptados: Rocket, un mapache armado con un rifle, Groot, un humanoide con forma de árbol, la letal y enigmática Gamora y el vengativo Drax the Destroyer.</p>
+                <br />
+                <p>Pero cuando Quill descubre el verdadero poder de la esfera, deberá hacer todo lo posible para derrotar a sus extravagantes rivales en un intento desesperado de salvar el destino de la galaxia.</p>
+            </article>
+
+        </section>
+
+        <!--
+        <section id="peliculas" class="section-main">
+            <h2 class="title-detail-trailer">Trailer & Info</h2>
+            <article class="article article_1 video">
+                <div class="article-favorite article-favorite-new">
+                    <video  src="video/trailer.mp4" width="100%" height="100vh" controls="true">
+                    </video>
+                </div>
+            </article>
+            <article class="article_2 info">
+                <div class="article-favorite article-favorite-new">
+                        <p><span>Titulo:</span>Guardianes de la Galaxia.</p>
+                        <p><span>Genero:</span> Cienci-Ficción.</p>
+                        <p><span>Productora:</span> Marvel.</p>
+                        <p><span>Recomendado:</span> +16años.</p>
+                        <p><span>Duración:</span> 118min.</p>
+                        <p><span>Reparto:</span> Chris Patt, Dave Bautista, Bradley Cooper.</p>
+                        <p><span>Director:</span> James Gunn.</p>
+                        <p><span>Año:</span> 2014.</p>
+                </div>
+
+            </article>
+            <h2 class="title-detail-sipno">Sipnosis</h2>
+            <article class="sipnosis">
+                <p>El temerario aventurero Peter Quill es objeto de un implacable cazarrecompensas después de robar una misteriosa esfera codiciada por Ronan, un poderoso villano cuya ambición amenaza todo el universo.</p>
+                <br />
+                <p>Para poder escapar del incansable Ronan, Quill se ve obligado a pactar una complicada tregua con un cuarteto de disparatados inadaptados: Rocket, un mapache armado con un rifle, Groot, un humanoide con forma de árbol, la letal y enigmática Gamora y el vengativo Drax the Destroyer.</p>
+                <br />
+                <p>Pero cuando Quill descubre el verdadero poder de la esfera, deberá hacer todo lo posible para derrotar a sus extravagantes rivales en un intento desesperado de salvar el destino de la galaxia.</p>
+            </article>
+        </section>-->
+
+        <section id="peliculas" class="section-main">
+            <h1 class="title-section-main">Recomendaciones</h1>
+            <article class="article article_1">
+                <div class="article-favorite article-favorite-new">
+                    <div class="article-favorite-box">
+                        <img src="./img/peli-1.jpg" alt="Serie Dark">
+                        <i class="icon-star-empty-2"></i>
+                    </div>
+                    <a href="./detail.html"><div class="article-info">
+                        <h2>Dark Temporada 3</h2>
+                        <p>Recomendado: +16</p>
+                        <p>Año: 2020</p>
+                        <p>Desenlace de los viajes en el tiempo</p>
+                    </div></a>
+                </div>
+            </article>
+            <article class="article_2">
+                <div class="article-favorite article-favorite-new">
+                    <div class="article-favorite-box">
+                        <img src="./img/peli-2.jpg" alt="Serie Dark">
+                        <i class="icon-star-full-3"></i>
+                    </div>
+                    <a href="./detail.html"><div class="article-info">
+                        <h2>Dark Temporada 3</h2>
+                        <p>Recomendado: +16</p>
+                        <p>Año: 2020</p>
+                        <p>Desenlace de los viajes en el tiempo</p>
+                    </div></a>
+                </div>
+
+            </article>
+            <article class="article_3">
+                <div class="article-favorite article-favorite-new">
+                    <div class="article-favorite-box">
+                        <img src="./img/peli-3.jpg" alt="Serie Dark">
+                        <i class="icon-star-empty-2"></i>
+                    </div>
+                    <a href="./detail.html"><div class="article-info">
+                        <h2>Dark Temporada 3</h2>
+                        <p>Recomendado: +16</p>
+                        <p>Año: 2020</p>
+                        <p>Desenlace de los viajes en el tiempo</p>
+                    </div></a>
+                </div>
+
+            </article>
+            <article class="article_4">
+                <div class="article-favorite article-favorite-new">
+                    <div class="article-favorite-box">
+                        <img src="./img/peli-4.jpg" alt="Serie Dark">
+                        <i class="icon-star-full-3"></i>
+                    </div>
+                    <a href="./detail.html"><div class="article-info">
+                        <h2>Dark Temporada 3</h2>
+                        <p>Recomendado: +16</p>
+                        <p>Año: 2020</p>
+                        <p>Desenlace de los viajes en el tiempo</p>
+                    </div></a>
+                </div>
+            </article>
+        </section>
         <section id="contacto" class="section-main section-inverted">
             <h2>Contacto</h2>
 
