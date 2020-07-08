@@ -2,7 +2,7 @@
 .section-main.section-inverted{
     min-width: 100vw;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
     grid-template-rows: auto;
     grid-template-areas: "title"
     "data"
@@ -51,7 +51,7 @@
 .section-inverted input[type="text"],
 .section-inverted input[type="email"],
 .section-inverted textarea{
-    font-size: 1.3rem;
+    font-size: 1rem;
     padding: 3px;
 }
 
