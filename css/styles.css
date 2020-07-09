@@ -1,13 +1,15 @@
 
 /* Estilos Globales*/
 
+/*Variables Globales */
 :root{
-    --max-width: 900px;
+    --max-width: 1000px;
     --dark-color: #0c0c0c;
     --red-color: #b12525;
     --navbar-height: 50px;
 }
 
+/* Fuentes */
 @font-face {
     font-family: "Movie";
     src: url("../fonts/Movie_title.ttf") format("truetype");
@@ -41,6 +43,7 @@ a{
     list-style: none;
 }
 
+/* Estilos Contenedor Principal */
 .container-main{
     display: grid;
     grid-template-columns: 1fr;
@@ -51,6 +54,7 @@ a{
 "footer";
 }
 
+/* Layout Contenedor Principal */
 nav{
     grid-area: navbar;
 }
@@ -67,9 +71,7 @@ footer{
     grid-area: footer;
 }
 
-.section-main img{
-    height: 270px;
-}
+/* Tipografías Globales */
 
 input{
     font-family: Play, Arial, Helvetica, sans-serif;
