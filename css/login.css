@@ -3,7 +3,7 @@
 .container{
     height: 100vh;
     display: grid;
-    grid-template-columns: repeat(1, minmax(200px, auto));
+    grid-template-columns: repeat(1, minmax(100px, auto));
     grid-template-rows: auto repeat(1, minmax(auto, 1fr)) 70px ;
     grid-template-areas:"header"
 "main"
@@ -62,6 +62,7 @@ main{
 
 .two-section{
     display: grid;
+    grid-template-columns: minmax(100px, auto);
     grid-template-areas: "title"
 "info"
 "access";

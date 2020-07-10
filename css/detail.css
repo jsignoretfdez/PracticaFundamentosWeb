@@ -7,13 +7,13 @@ background: url("../img/header-detail.jpg") no-repeat top center;
 }*/
 
 .header-detail{
-    margin-top: 20px;
+    margin-top: 50px;
     margin-bottom: 5px;
-    max-height: 300px;
+    max-height: 50%;
 }
 .header-detail img{
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    max-height: 80vh;
 }
 
 .container-detail{
@@ -55,30 +55,37 @@ background: url("../img/header-detail.jpg") no-repeat top center;
     grid-area: title-sipno;
 }
 
-.info span{
+.info p{
+    padding: 3px 0;
+    font-size: 1.1rem;
+}
+
+.info span {
     color: var(--red-color);
     text-shadow: 1px 1px 0 var(--dark-color);
-    font-size: 1rem;
+    font-size: 1.1rem;
     text-transform: uppercase;
+}
+.sipno p{
+   line-height: 1.5rem;
+    font-size: 1.1rem;
 }
 
 @media (min-width: 768px) {
 
     .header-detail{
-        max-height: 400px;
-        height: 90vh;
+        margin-top: 50px;
     }
 
     .container-detail{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
-        grid-template-areas: "title-video title-sipno"
-            "video sipno"
-    "title-info sipno"
-    "info info";
+        grid-template-areas: "title-video title-info"
+            "video info"
+    "title-sipno info"
+    "sipno sipno";
         gap:20px;
-        max-height: 100vh;
     }
 
 }
