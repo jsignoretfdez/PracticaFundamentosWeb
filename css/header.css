@@ -1,3 +1,4 @@
+/* Styles Header */
 #header{
     background: url("../img/header2-compressor.jpg") no-repeat top center;
     background-size: cover;
@@ -9,12 +10,15 @@
     position: relative;
 }
 
+
+/* Text Header */
 .text-header{
     position: absolute;
     top: 45vh;
     width: 100%;
     text-align: center;
     background-color: rgba(255, 255, 255,0.8);
+    color: #0c0c0c;;
     color: var(--dark-color);
     padding: 10px;
 
@@ -30,6 +34,7 @@
     font-size: 1.5rem;
 }
 
+/*Star Media queries*/
 
 @media (min-width: 768px) {
     .text-header{
@@ -40,9 +45,15 @@
         padding: 5vh 10px;
     }
 
+    /* Animaciones */
+
     @keyframes caida {
         from {
             opacity: 0;
+            -moz-transform: translateY(-100%);
+            -ms-transform: translateY(-100%);
+            -webkit-transform: translateY(-100%);
+            -o-transform: translateY(-100%);
             transform: translateY(-100%);
         }
 
@@ -54,6 +65,10 @@
     @keyframes subida {
         0% {
             opacity: 0;
+            -moz-transform: translate(0, 100%);
+            -ms-transform: translate(0, 100%);
+            -webkit-transform: translate(0, 100%);
+            -o-transform: translate(0, 100%);
             transform: translate(0, 100%);
         }
 
@@ -62,19 +77,30 @@
         }
     }
 
+    /* Styles Header */
     .title{
-        font-family: Orbitron-ExtraBold;
         font-size: 3rem;
         opacity: 0;
+        -moz-animation: caida 2.5s ease-in-out forwards;
+        -webkit-animation: caida 2.5s ease-in-out forwards;
+        -o-animation: caida 2.5s ease-in-out forwards;
         animation: caida 2.5s ease-in-out forwards;
+        -moz-animation-delay: .5s;
+        -webkit-animation-delay: .5s;
+        -o-animation-delay: .5s;
         animation-delay: .5s;
     }
 
     .tagline{
-        font-family: Play;
         font-size: 2.2rem;
         opacity: 0;
+        -moz-animation: subida 1s ease-in-out forwards;
+        -webkit-animation: subida 1s ease-in-out forwards;
+        -o-animation: subida 1s ease-in-out forwards;
         animation: subida 1s ease-in-out forwards;
+        -moz-animation-delay: 1.8s;
+        -webkit-animation-delay: 1.8s;
+        -o-animation-delay: 1.8s;
         animation-delay: 1.8s;
     }
 }
