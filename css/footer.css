@@ -1,9 +1,12 @@
 footer{
-    grid-area: footer;
+    height: 70px;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: column;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #0c0c0c;
     background-color: var(--dark-color);
     color: white;
 }
@@ -23,24 +26,23 @@ footer{
     text-decoration: none;
     color: white;
 }
+
+/* Star Media queries */
+
 @media (min-width: 768px) {
     footer.footer {
+        display: -ms-flexbox;
         display: flex;
+        -ms-flex-direction: row;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
         font-size: 20px;
+        padding: 0 20px;
     }
-
     .icons {
         justify-content: space-between;
         font-size: 25px;
-    }
-
-    .footer {
-        display: grid;
-        align-content: center;
-        padding: 0 50px;
     }
 
     .icon-facebook2:hover {
