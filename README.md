@@ -1,6 +1,6 @@
 # PracticaFundamentosWeb
 
-## Introducción
+# Introducción
 
 Practica realizada para el módulo de HTML/CSS del Bootcamp Full Stack Web.
 
@@ -8,24 +8,24 @@ La Practica debia contar con una página de Login, una página Princial donde mo
 
 La página debia ser responsive.
 
-## Descarga
+# Descarga
 
 Abrimos un terminal y clonamos el repositorio a nuestra ubicación en local.
 
 `git clone https://github.com/jsignoretfdez/PracticaFundamentosWeb.git`
 
 
-## Capturas
+# Capturas
 
-###**Mobile**
+### **Mobile**
 
 ![captura](./img/capturas/3.png)![captura](./img/capturas/6.png)![captura](./img/capturas/4.png)
 
-**Login**
+### **Login**
 ![captura](./img/capturas/2.png)
-**Index**
+### **Index**
 ![captura](./img/capturas/1.png)
-**Detail**
+### **Detail**
 ![captura](./img/capturas/5.png)
 
 
