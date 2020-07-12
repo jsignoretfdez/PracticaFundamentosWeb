@@ -3,7 +3,7 @@
 
 /*Variables Globales */
 :root{
-    --max-width: 1000px;
+    --max-width: 1250px;
     --dark-color: #0c0c0c;
     --red-color: #b12525;
     --navbar-height: 50px;
@@ -13,6 +13,16 @@
 @font-face {
     font-family: "Movie";
     src: url("../fonts/Movie_title.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Movie-title";
+    src: url("../fonts/Adventure_Subtitles.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Title-sipno";
+    src: url("../fonts/Azonix.otf") format("opentype");
 }
 
 @font-face {
@@ -41,34 +51,6 @@ li,
 a{
     text-decoration: none;
     list-style: none;
-}
-
-/* Estilos Contenedor Principal */
-.container-main{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto 70px;
-    grid-template-areas: "navbar"
-    "header"
-"main"
-"footer";
-}
-
-/* Layout Contenedor Principal */
-nav{
-    grid-area: navbar;
-}
-
-header{
-    grid-area: header;
-}
-
-main{
-    grid-area: main;
-}
-
-footer{
-    grid-area: footer;
 }
 
 /* Tipografías Globales */
