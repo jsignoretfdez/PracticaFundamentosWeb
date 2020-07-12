@@ -54,7 +54,6 @@ main{
 }
 
 .main-container-login{
-    border-radius: 30px;
     border: 3px solid #6c1b1b;
 }
 
@@ -93,12 +92,12 @@ main{
 }
 
 .section-info h3{
-    font-size: 22px;
+    font-size: 1.3rem;
 }
 
 .section-info p{
     margin: 16px 0;
-    font-size: 18px;
+    font-size: 1rem;
 }
 
 .section-acces{
@@ -116,7 +115,7 @@ main{
 
 label{
     margin: 4px 0;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .box-info-form input[type=email],
@@ -133,8 +132,9 @@ label{
     border: none;
     border-bottom: 2px solid var(--red-color);
     color: white;
-    font-size: 16px;
+    font-size: 1rem;
     letter-spacing: 2px;
+    padding: 5px 8px;
 }
 
 .check-box{
@@ -146,7 +146,7 @@ label{
 }
 
 .box-info-form input[type=submit]{
-    font-size: 16px;
+    font-size: 1rem;
     background-color: var(--red-color);
     color: white;
     border-radius: 50px;
@@ -187,7 +187,7 @@ Inicio Media queries.
     }
 
     main{
-        width: 70%;
+        width: 90%;
         max-width: 700px;
     }
 
@@ -205,7 +205,7 @@ Inicio Media queries.
         font-size: 2.1rem;
     }
     .section-info h3{
-        font-size: 23px;
+        font-size: 1.6rem;
     }
     .box-info p::before{
         font-size: 1.2rem;
@@ -220,7 +220,7 @@ Inicio Media queries.
     .box-info-form input[type="password"],
     .box-info-form input[type="checkbox"],
     .box-info-form input[type="submit"]{
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
     .box-info input[type="submit"]{
         text-shadow: 2px 2px 0 var(--dark-color);
@@ -233,7 +233,7 @@ Inicio Media queries.
     }
     .remenber{
         opacity: .5;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
     .remenber:hover{
         opacity: 1;
