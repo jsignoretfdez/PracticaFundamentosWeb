@@ -16,11 +16,15 @@ Abrimos un terminal y clonamos el repositorio a nuestra ubicación en local.
 
 
 ### Capturas
+
+**Mobile**
 ![captura](./img/capturas/3.png)![captura](./img/capturas/6.png)![captura](./img/capturas/4.png)
 
+**Login**
 ![captura](./img/capturas/2.png)
+**Index**
 ![captura](./img/capturas/1.png)
-
+**Detail**
 ![captura](./img/capturas/5.png)
 
 
