@@ -1,25 +1,34 @@
+/*Styles Navbar*/
 .navbar {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    height: 50px;
     height: var(--navbar-height);
+    background-color: #b12525;
     background-color: var(--red-color);
     z-index: 9999;
 }
 
+/*Logo*/
 .navbar .logo {
     font-family: Movie, 'Times New Roman', Times, serif;
     text-align: center;
+    line-height: 50px;
     line-height: var(--navbar-height);
     font-size: 2.5rem;
+    text-shadow: 2px 2px 0 #0c0c0c;
     text-shadow: 2px 2px 0 var(--dark-color);
     text-transform: uppercase;
     letter-spacing: .1rem;
 }
 
+/* Burger For Mobile*/
 .navbar .burger-label {
+    width: 50px;
     width: var(--navbar-height);
+    height: 50px;
     height: var(--navbar-height);
     position: absolute;
     top: 0;
@@ -38,7 +47,7 @@
     box-shadow: 0 0.25em 0 0 azure, 0 0.5em 0 0 azure;
 }
 
-/* Menú Cerrado */
+/* Menú Close */
 .navbar-list {
     display: none;
     list-style: none;
@@ -49,20 +58,26 @@
     display: none;
 }
 
-/* Menú Abierto*/
+/* Menú Open*/
 #burger-checkbox:checked ~ .navbar-list {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
     display: flex;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
     -webkit-justify-content: space-around;
     justify-content: space-around;
+    background-color: #0c0c0c;;
     background-color: var(--dark-color);
     opacity: 0.9;
     padding: 0;
+    height: calc(100vh - 50px);
     height: calc(100vh - var(--navbar-height));
 }
 
+/*Links Navbar*/
 .navbar-item >a{
     text-decoration: none;
     color: azure;
@@ -72,6 +87,7 @@
     font-family: Play;
 }
 
+/*Search Navbar*/
 .navbar-search{
     display: inline-block;
     margin: 0 auto;
@@ -85,31 +101,39 @@
     font-size: 1.1rem;
 }
 
-/* Submenu Oculto*/
+/* Submenu Hidden*/
 .navbar-submenu-control{
     display: none;
 }
 
-/* Inicio Media queries*/
+/* Start Media queries*/
 @media (min-width: 576px){
 
 }
 
 @media (min-width: 768px) {
-    .navbar {
+    /*Style Navbar Large Display*/
+    .navbar{
+        display: -moz-flex;
+        display: -webkit-flex;
+        display: -ms-flex;
         display: flex;
     }
-
     .navbar .logo {
         margin: 0 .5rem;
         font-size: 2rem;
     }
 
+    /*Hidden Burger*/
     .navbar .burger-label {
         display: none;
     }
 
+    /* Styles Navbar-List*/
     .navbar-list {
+        display: -moz-flex;
+        display: -webkit-flex;
+        display: -ms-flex;
         display: flex;
         -webkit-flex-grow: 1;
         flex-grow: 1;
@@ -118,19 +142,25 @@
         -ms-flex-direction: row;
         -webkit-flex-direction: row;
         flex-direction: row;
+        background-color: #b12525;
         background-color: var(--red-color);
         margin: 0 1rem;
     }
 
     .navbar-item > a{
+        display: -moz-flex;
+        display: -webkit-flex;
+        display: -ms-flex;
         display: flex;
         color: white;
+        line-height: 50px;
         line-height: var(--navbar-height);
         padding: 0 .5rem;
         font-size: inherit;
     }
 
     .navbar-item > a:hover {
+        background-color: #0c0c0c;;
         background-color: var(--dark-color);
         color: azure;
         -webkit-transition: ease-in-out .7s;
@@ -139,6 +169,7 @@
         transition: ease-in-out .7s;
     }
 
+    /*Styles Search Input */
     .navbar-search{
         line-height: 50px;
         padding: 0 3px;
@@ -151,6 +182,8 @@
         width: 115px;
         font-size: 1rem;
     }
+
+    /*Sub-menú*/
     .navbar-submenu-control{
         display: block;
     }
@@ -159,6 +192,7 @@
         display: none;
         position: absolute;
         right: 0;
+        border: 2px solid #0c0c0c;;
         border: 2px solid var(--dark-color);
         line-height: 1rem;
         background-color: #f3f1f1;
@@ -180,8 +214,11 @@
 
     .navbar-item-submenu a{
         font-family: Orbitron-Regular, Arial, Helvetica, sans-serif;
+        color: #0c0c0c;
         color: var(--dark-color);
     }
+
+/*Animaciones*/
 
     @keyframes aparece {
         from {
@@ -193,6 +230,9 @@
     }
 
     .navbar-submenu-control:hover .navbar-submenu{
+        display: -moz-flex;
+        display: -webkit-flex;
+        display: -ms-flex;
         display: flex;
         -ms-flex-direction: column;
         -webkit-flex-direction: column;
@@ -209,6 +249,7 @@
     }
 
     .icon-user{
+        line-height: 50px;
         line-height: var(--navbar-height);
         font-size: 1.5rem;
     }
