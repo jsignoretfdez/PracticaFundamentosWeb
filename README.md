@@ -21,12 +21,8 @@ Abrimos un terminal y clonamos el repositorio a nuestra ubicación en local.
 
 ![captura](./img/capturas/2.png)
 
-![captura](./img/capturas/3.png)
-
-![captura](./img/capturas/4.png)
+![captura](./img/capturas/3.png)![captura](./img/capturas/6.png)![captura](./img/capturas/4.png)
 
 ![captura](./img/capturas/5.png)
-
-![captura](./img/capturas/6.png)
 
 
