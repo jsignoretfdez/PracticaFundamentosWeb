@@ -1,11 +1,5 @@
-/*.header-detail{
-background: url("../img/header-detail.jpg") no-repeat top center;
-    background-size: cover;
-    width: 100vw;
-    height: 30vh;
-    margin-top: 10px;
-}*/
 
+/* Styles Header Cover */
 .header-detail{
     margin-top: 50px;
     margin-bottom: 5px;
@@ -16,6 +10,7 @@ background: url("../img/header-detail.jpg") no-repeat top center;
     max-height: 80vh;
 }
 
+/* Style Container Detail */
 .container-detail{
     display: grid;
     grid-template-columns: 1fr;
@@ -29,15 +24,11 @@ background: url("../img/header-detail.jpg") no-repeat top center;
             "info";
     gap:20px;
     max-height: 100%;
-    padding: 0 10px;
+    padding: 0 15px;
 }
 
 .sipno{
     grid-area: sipno;
-}
-
-.film-card-info{
-    display: none;
 }
 
 .info{
@@ -59,6 +50,7 @@ background: url("../img/header-detail.jpg") no-repeat top center;
     grid-area: title-sipno;
 }
 
+/* Style Text */
 .info p{
     padding: 3px 0;
     font-size: 1.1rem;
@@ -75,6 +67,12 @@ background: url("../img/header-detail.jpg") no-repeat top center;
     font-size: 1.1rem;
 }
 
+.film-card-info{
+    display: none;
+}
+
+/* Start Media Queries */
+
 @media (min-width: 768px) {
 
     .header-detail{
@@ -90,6 +88,7 @@ background: url("../img/header-detail.jpg") no-repeat top center;
     "title-sipno info"
     "sipno sipno";
         gap:20px;
+        padding: 0 50px;
     }
 
 }
