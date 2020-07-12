@@ -17,6 +17,6 @@ Abrimos un terminal y clonamos el repositorio a nuestra ubicación en local.
 
 ### Capturas
 
-![Captura] (/img/capturas/1.png)
+![captura](./img/capturas/1.png)
 
 
